@@ -19,7 +19,7 @@ model Home {
   listed_date         DateTime     @default(now())
   price               Float
   land_size           Float
-  property_type        PropertyType
+  property_type       PropertyType
   created_at          DateTime     @default(now())
   updated_at          DateTime     @updatedAt
   images              Image[]
@@ -45,7 +45,7 @@ model User {
   password         String
   created_at       DateTime  @default(now())
   updated_at       DateTime  @updatedAt
-  user_type         UserType
+  user_type        UserType
   homes            Home[]
   buyer_messages   Message[] @relation("buyer_messages")
   realtor_messages Message[] @relation("realtor_messages")
