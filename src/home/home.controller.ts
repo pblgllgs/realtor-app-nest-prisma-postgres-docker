@@ -9,13 +9,11 @@ import {
   Put,
   Query,
   UnauthorizedException,
-  UseGuards,
 } from '@nestjs/common';
 import { HomeService } from './home.service';
 import { HomeResponseDto, CreateHomeDto, UpdateHomeDto } from './dto/home.dto';
 import { PropertyType, UserType } from '@prisma/client';
 import { User, UserInfo } from '../user/decorators/user.decorator';
-import { AuthGuard } from '../guards/auth.guard';
 import { Roles } from 'src/decorators/roles.decorator';
 
 @Controller('home')
