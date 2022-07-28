@@ -68,12 +68,4 @@ export class AuthService {
     const string = `${email}-${userType}-${process.env.PRODUCT_KEY_SECRET}`;
     return bcrypt.hash(string, 10);
   }
-  async me(id: number) {
-    const me = await this.prismaService.user.findFirst({
-      where: {
-        id: id,
-      },
-    });
-    return me;
-  }
 }

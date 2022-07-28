@@ -46,6 +46,6 @@ export class AuthController {
   }
   @Get('/me')
   me(@User() user: UserInfo) {
-    return this.authService.me(user.id);
+    return user;
   }
 }
