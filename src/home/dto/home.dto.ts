@@ -101,11 +101,11 @@ export class UpdateHomeDto {
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  numberOfBedrooms?: number;
+  number_of_bedrooms?: number;
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  numberOfBathrooms?: number;
+  number_of_bathrooms?: number;
   @IsOptional()
   @IsString()
   @IsNotEmpty()
@@ -118,10 +118,10 @@ export class UpdateHomeDto {
   @IsOptional()
   @IsNumber()
   @IsPositive()
-  landSize?: number;
+  land_size?: number;
   @IsOptional()
   @IsEnum(PropertyType)
-  propertyType?: PropertyType;
+  property_type?: PropertyType;
   // @IsOptional()
   // @IsArray()
   // @ValidateNested({ each: true })
