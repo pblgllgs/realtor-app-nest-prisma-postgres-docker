@@ -128,3 +128,8 @@ export class UpdateHomeDto {
   // @Type(() => Image)
   // images: Image[];
 }
+export class InquireDto {
+  @IsString()
+  @IsNotEmpty()
+  message: string;
+}
