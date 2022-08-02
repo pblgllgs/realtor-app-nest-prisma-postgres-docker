@@ -9,4 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./postgres:/data/db
+      - db_data_realtor
+      :/var/lib/postgresql/data
+volumes:
+  db_data_realtor:
