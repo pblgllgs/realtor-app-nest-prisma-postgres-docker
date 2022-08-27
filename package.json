@@ -10,6 +10,7 @@
     "build": "nest build",
     "db-up": "docker-compose up -d",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prisma:push": "npx prisma db push",
     "prisma:studio": "npx prisma studio",
     "start": "nest start",
     "start:dev": "nest start --watch",
